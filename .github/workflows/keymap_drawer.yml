@@ -22,5 +22,6 @@ jobs:
       config_path: "keymap_drawer.config.yaml"
       output_folder: "keymap-drawer"
       destination: "both"
+      fail_on_error: true
       parse_args: ""
       draw_args: ""
