@@ -39,7 +39,7 @@ layers:
   - LEFT GUI
   - TAB
   - {t: SPACE, h: NUM}
-  - SPACE
+  - {t: SPACE, h: SYM}
   - {t: SPACE, h: SCROLL}
   - {t: BACKSPACE, h: SYM}
   - RCTRL
@@ -125,9 +125,9 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - {type: held}
+  - {t: ▽, type: trans}
+  - {type: held alternate}
   - {t: ▽, type: trans}
   MOUSE:
   - {t: ▽, type: trans}
