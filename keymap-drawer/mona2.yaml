@@ -83,7 +83,7 @@ layers:
   - {t: ▽, type: trans}
   - {type: held}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - RIGHT SHIFT
   - RIGHT SHIFT
   - {t: ▽, type: trans}
   SYM:
