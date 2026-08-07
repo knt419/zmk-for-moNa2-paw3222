@@ -16,6 +16,7 @@ layers:
   - {t: D, h: LCTRL}
   - {t: F, h: LEFT SHIFT}
   - G
+  - PAGE UP
   - H
   - {t: J, h: RIGHT SHIFT}
   - {t: K, h: RCTRL}
@@ -26,22 +27,21 @@ layers:
   - C
   - V
   - B
-  - MUTE
   - BT
+  - PAGE DOWN
   - N
   - M
   - ','
   - .
   - /
   - LCTRL
-  - LGUI
   - LALT
+  - LEFT GUI
   - TAB
   - {t: SPACE, h: NUM}
-  - MOUSE
   - SPACE
+  - {t: SPACE, h: SCROLL}
   - {t: BACKSPACE, h: SYM}
-  - RIGHT GUI
   - RCTRL
   NUM:
   - '1'
@@ -59,6 +59,7 @@ layers:
   - {t: ▽, type: trans}
   - Ctl+F5
   - F12
+  - {t: ▽, type: trans}
   - '-'
   - '='
   - '`'
@@ -85,7 +86,6 @@ layers:
   - {t: ▽, type: trans}
   - RIGHT SHIFT
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   SYM:
   - ESC
   - {t: ▽, type: trans}
@@ -103,11 +103,12 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - LEFT
+  - {t: ▽, type: trans}
+  - LEFT ARROW
   - DOWN
   - RIGHT
-  - {t: ▽, type: trans}
   - DELETE
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -128,7 +129,6 @@ layers:
   - {t: ▽, type: trans}
   - {type: held}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   MOUSE:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -144,6 +144,7 @@ layers:
   - '&mkp MB1'
   - '&mkp MB3'
   - '&mkp MB2'
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - '&mkp MB1'
@@ -165,9 +166,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - LCTRL
-  - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -227,35 +227,35 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - {type: held alternate}
+  - {type: held alternate}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {type: held}
-  - {type: held}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
 combos:
@@ -265,17 +265,17 @@ combos:
   k: ']'
 - p: [12, 13]
   k: (
-- p: [16, 17]
+- p: [18, 17]
   k: )
-- p: [22, 23]
+- p: [23, 24]
   k: '{'
-- p: [28, 29]
+- p: [29, 30]
   k: '}'
 - p: [4, 5]
   k: \
 - p: [14, 15]
   k: '|'
-- p: [18, 19]
+- p: [19, 20]
   k: ENTER
 - p: [11, 12]
   k: SCROLL
