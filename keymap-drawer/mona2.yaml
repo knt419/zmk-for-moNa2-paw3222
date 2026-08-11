@@ -41,7 +41,7 @@ layers:
   - {t: SPACE, h: NUM}
   - {t: SPACE, h: SYM}
   - BACKSPACE
-  - SYM
+  - {t: BACKSPACE, h: SYM}
   - RCTRL
   NUM:
   - '1'
