@@ -1,281 +1,361 @@
 layout: {zmk_keyboard: mona2}
 layers:
-  BASE:
+  DEFAULT:
   - Q
-  - W
-  - E
   - R
-  - T
+  - {t: '-', s: _}
+  - G
+  - Z
+  - {t: /, s: \}
+  - {t: C, h: Ctl+C}
+  - H
+  - L
   - Y
   - U
-  - I
-  - O
-  - P
-  - {t: A, h: LEFT GUI}
-  - {t: S, h: LEFT ALT}
-  - {t: D, h: LCTRL}
-  - {t: F, h: LEFT SHIFT}
-  - G
-  - PAGE UP
-  - H
-  - {t: J, h: RIGHT SHIFT}
-  - {t: K, h: RCTRL}
-  - {t: L, h: RIGHT ALT}
-  - {t: ;, h: RIGHT GUI}
-  - Z
-  - X
-  - C
-  - V
-  - B
-  - BT
-  - PAGE DOWN
   - N
+  - I
+  - T
+  - D
+  - {t: '$$mdi:keyboard-esc$$', h: SYSTEM}
+  - P
+  - O
+  - K
+  - {t: A, h: Ctl+A}
+  - S
+  - {t: V, h: '$$mdi:apple-keyboard-shift$$'}
+  - {t: ',', h: '!', s: <}
+  - {t: ., h: '?', s: '>'}
   - M
-  - ','
-  - .
-  - /
-  - LCTRL
-  - LALT
-  - LEFT GUI
-  - TAB
-  - {t: SPACE, h: NUM}
-  - {t: SPACE, h: SYM}
-  - BACKSPACE
-  - {t: BACKSPACE, h: SYM}
-  - RCTRL
-  NUM:
-  - '1'
-  - '2'
-  - '3'
-  - '4'
-  - '5'
-  - '6'
+  - W
+  - $$mdi:caps-lock$$
+  - {t: ;, s: ':'}
+  - {t: X, h: Ctl+X}
+  - {t: E, h: Gui+E}
+  - B
+  - F
+  - J
+  - {t: '$$mdi:microphone-off$$', h: 'Ctl+$$mdi:keyboard-space$$'}
+  - {t: Ctl+PgUp, h: '$$mdi:microsoft-windows$$'}
+  - {t: Ctl+PgDn, h: '$$mdi:apple-keyboard-option$$'}
+  - $$mdi:mouse-left-click-outline$$
+  - {t: '$$mdi:keyboard-space$$', h: '$$mdi:apple-keyboard-shift$$'}
+  - {t: '$$mdi:keyboard-tab$$', h: '$$mdi:apple-keyboard-control$$'}
+  - {t: '$$mdi:backspace$$', h: FUNCTION, s: '$$mdi:backspace-reverse-outline$$'}
+  - {t: '$$mdi:keyboard-return$$', h: NUMBER}
+  - $$material:screenshot_region$$
+  MOUSE:
+  - {t: '$$tabler:fold-down$$', type: trans}
+  - {t: '$$tabler:fold-down$$', type: trans}
+  - {t: '$$tabler:fold-down$$', type: trans}
+  - {t: '$$tabler:fold-down$$', type: trans}
+  - {t: '$$tabler:fold-down$$', type: trans}
+  - {t: '$$tabler:fold-down$$', type: trans}
+  - {t: '$$tabler:fold-down$$', type: trans}
+  - {t: '$$tabler:fold-down$$', type: trans}
+  - {t: '$$tabler:fold-down$$', type: trans}
+  - {t: '$$tabler:fold-down$$', type: trans}
+  - {t: '$$tabler:fold-down$$', type: trans}
+  - {t: '$$tabler:fold-down$$', type: trans}
+  - {t: '$$tabler:fold-down$$', type: trans}
+  - {t: '$$tabler:fold-down$$', type: trans}
+  - {t: '$$tabler:fold-down$$', type: trans}
+  - {t: '$$tabler:fold-down$$', type: trans}
+  - {t: '$$tabler:fold-down$$', type: trans}
+  - {t: '$$tabler:fold-down$$', type: trans}
+  - {t: '$$tabler:fold-down$$', type: trans}
+  - {t: '$$tabler:fold-down$$', type: trans}
+  - {t: '$$tabler:fold-down$$', type: trans}
+  - {t: '$$tabler:fold-down$$', type: trans}
+  - {t: '$$tabler:fold-down$$', type: trans}
+  - {t: '$$tabler:fold-down$$', type: trans}
+  - {t: '$$tabler:fold-down$$', type: trans}
+  - {t: '$$tabler:fold-down$$', type: trans}
+  - {t: '$$tabler:fold-down$$', type: trans}
+  - {t: '$$tabler:fold-down$$', type: trans}
+  - {t: '$$tabler:fold-down$$', type: trans}
+  - $$mdi:mouse-left-click-outline$$
+  - {t: '$$mdi:mouse-scroll-wheel$$', h: SCROLL}
+  - $$mdi:mouse-right-click-outline$$
+  - {t: '$$tabler:fold-down$$', type: trans}
+  - {t: '$$tabler:fold-down$$', type: trans}
+  - {t: '$$tabler:fold-down$$', type: trans}
+  - {t: '$$tabler:fold-down$$', type: trans}
+  - {t: '$$tabler:fold-down$$', type: trans}
+  - {t: '$$mdi:mouse-scroll-wheel$$', h: SCROLL}
+  - {t: '$$mdi:mouse-right-click-outline$$', h: SNIPE}
+  - {t: '$$tabler:fold-down$$', type: trans}
+  - {t: '$$tabler:fold-down$$', type: trans}
+  - {t: '$$tabler:fold-down$$', type: trans}
+  SCROLL:
+  - {t: '$$tabler:fold-down$$', type: trans}
+  - {t: '$$tabler:fold-down$$', type: trans}
+  - {t: '$$tabler:fold-down$$', type: trans}
+  - {t: '$$tabler:fold-down$$', type: trans}
+  - {t: '$$tabler:fold-down$$', type: trans}
+  - {t: '$$tabler:fold-down$$', type: trans}
+  - {t: '$$tabler:fold-down$$', type: trans}
+  - {t: '$$tabler:fold-down$$', type: trans}
+  - {t: '$$tabler:fold-down$$', type: trans}
+  - {t: '$$tabler:fold-down$$', type: trans}
+  - {t: '$$tabler:fold-down$$', type: trans}
+  - {t: '$$tabler:fold-down$$', type: trans}
+  - {t: '$$tabler:fold-down$$', type: trans}
+  - {t: '$$tabler:fold-down$$', type: trans}
+  - {t: '$$tabler:fold-down$$', type: trans}
+  - {t: '$$tabler:fold-down$$', type: trans}
+  - {t: '$$tabler:fold-down$$', type: trans}
+  - {t: '$$tabler:fold-down$$', type: trans}
+  - {t: '$$tabler:fold-down$$', type: trans}
+  - {t: '$$tabler:fold-down$$', type: trans}
+  - {t: '$$tabler:fold-down$$', type: trans}
+  - {t: '$$tabler:fold-down$$', type: trans}
+  - {t: '$$tabler:fold-down$$', type: trans}
+  - {t: '$$tabler:fold-down$$', type: trans}
+  - {t: '$$tabler:fold-down$$', type: trans}
+  - {t: '$$tabler:fold-down$$', type: trans}
+  - {t: '$$tabler:fold-down$$', type: trans}
+  - {t: '$$tabler:fold-down$$', type: trans}
+  - {t: '$$tabler:fold-down$$', type: trans}
+  - {t: '$$tabler:fold-down$$', type: trans}
+  - {type: held}
+  - {t: '$$tabler:fold-down$$', type: trans}
+  - {t: '$$tabler:fold-down$$', type: trans}
+  - {t: '$$tabler:fold-down$$', type: trans}
+  - {t: '$$tabler:fold-down$$', type: trans}
+  - {t: '$$tabler:fold-down$$', type: trans}
+  - {t: '$$tabler:fold-down$$', type: trans}
+  - {type: held alternate}
+  - {t: '$$tabler:fold-down$$', type: trans}
+  - {t: '$$tabler:fold-down$$', type: trans}
+  - {t: '$$tabler:fold-down$$', type: trans}
+  - {t: '$$tabler:fold-down$$', type: trans}
+  SNIPE:
+  - {t: '$$tabler:fold-down$$', type: trans}
+  - {t: '$$tabler:fold-down$$', type: trans}
+  - {t: '$$tabler:fold-down$$', type: trans}
+  - {t: '$$tabler:fold-down$$', type: trans}
+  - {t: '$$tabler:fold-down$$', type: trans}
+  - {t: '$$tabler:fold-down$$', type: trans}
+  - {t: '$$tabler:fold-down$$', type: trans}
+  - {t: '$$tabler:fold-down$$', type: trans}
+  - {t: '$$tabler:fold-down$$', type: trans}
+  - {t: '$$tabler:fold-down$$', type: trans}
+  - {t: '$$tabler:fold-down$$', type: trans}
+  - {t: '$$tabler:fold-down$$', type: trans}
+  - {t: '$$tabler:fold-down$$', type: trans}
+  - {t: '$$tabler:fold-down$$', type: trans}
+  - {t: '$$tabler:fold-down$$', type: trans}
+  - {t: '$$tabler:fold-down$$', type: trans}
+  - {t: '$$tabler:fold-down$$', type: trans}
+  - {t: '$$tabler:fold-down$$', type: trans}
+  - {t: '$$tabler:fold-down$$', type: trans}
+  - {t: '$$tabler:fold-down$$', type: trans}
+  - {t: '$$tabler:fold-down$$', type: trans}
+  - {t: '$$tabler:fold-down$$', type: trans}
+  - {t: '$$tabler:fold-down$$', type: trans}
+  - {t: '$$tabler:fold-down$$', type: trans}
+  - {t: '$$tabler:fold-down$$', type: trans}
+  - {t: '$$tabler:fold-down$$', type: trans}
+  - {t: '$$tabler:fold-down$$', type: trans}
+  - {t: '$$tabler:fold-down$$', type: trans}
+  - {t: '$$tabler:fold-down$$', type: trans}
+  - {t: '$$tabler:fold-down$$', type: trans}
+  - {t: '$$tabler:fold-down$$', type: trans}
+  - {t: '$$tabler:fold-down$$', type: trans}
+  - {t: '$$tabler:fold-down$$', type: trans}
+  - {t: '$$tabler:fold-down$$', type: trans}
+  - {t: '$$tabler:fold-down$$', type: trans}
+  - {t: '$$tabler:fold-down$$', type: trans}
+  - {t: '$$tabler:fold-down$$', type: trans}
+  - {t: '$$tabler:fold-down$$', type: trans}
+  - {type: held}
+  - {t: '$$tabler:fold-down$$', type: trans}
+  - {t: '$$tabler:fold-down$$', type: trans}
+  - {t: '$$tabler:fold-down$$', type: trans}
+  NUMBER:
+  - {t: '*', h: jp_aster}
   - '7'
   - '8'
   - '9'
-  - '0'
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - Ctl+F5
+  - {t: +, h: jp_plus}
+  - {t: '~', h: jp_tilde}
+  - {t: '`', h: '&jp_backquote'}
+  - {t: '''', h: '&jp_quote'}
+  - {t: '"', h: '&jp_doublequote'}
+  - {t: ^, h: '&jp_caret'}
+  - {t: /, s: '?'}
+  - '4'
+  - '5'
+  - '6'
+  - {t: '-', s: _}
+  - {t: '$$tabler:fold-down$$', type: trans}
+  - $$mdi:arrow-left-bold$$
+  - $$mdi:arrow-down-bold$$
+  - $$mdi:arrow-up-bold$$
+  - $$mdi:arrow-right-bold$$
+  - {t: \, s: '|'}
+  - {t: '0', s: )}
+  - '1'
+  - '2'
+  - '3'
+  - {t: ':', h: jp_colon}
+  - $$mdi:numeric-1-box-outline$$
+  - {t: '|', h: '&jp_pipe'}
+  - '!'
+  - {t: '@', h: '&jp_at'}
+  - '#'
+  - {t: '&', h: '&jp_amp'}
+  - $
+  - '%'
+  - {t: ., s: '>'}
+  - {t: ',', s: <}
+  - $$mdi:mouse-right-click-outline$$
+  - {t: '=', h: '$$mdi:apple-keyboard-shift$$', s: +}
+  - {t: ., h: '$$mdi:apple-keyboard-control$$', s: '>'}
+  - {t: '$$tabler:fold-down$$', type: trans}
+  - {type: held}
+  - {t: _, h: jp_under}
+  FUNCTION:
+  - {t: '{', h: '}'}
+  - F7
+  - F8
+  - F9
   - F12
-  - {t: ▽, type: trans}
-  - '-'
-  - '='
-  - '`'
-  - {t: ▽, type: trans}
-  - ''''
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {type: held}
-  - {t: ▽, type: trans}
-  - RIGHT SHIFT
-  - RIGHT SHIFT
-  - {t: ▽, type: trans}
-  SYM:
-  - ESC
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - Ins
+  - $$mdi:backspace-reverse-outline$$
+  - $$material:screenshot_region$$
+  - PAUSE BREAK
+  - {t: '}', h: '|'}
+  - {t: (, h: '*'}
+  - F4
+  - F5
+  - F6
+  - F11
+  - {t: '$$tabler:fold-down$$', type: trans}
   - HOME
-  - UP ARROW
+  - PgDn
+  - PgUp
   - END
-  - '&bootloader'
-  - CAPS
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - LEFT ARROW
-  - DOWN
-  - RIGHT
-  - DELETE
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {type: held}
-  - {t: ▽, type: trans}
-  - {type: held alternate}
-  - {t: ▽, type: trans}
-  MOUSE:
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - '&mkp MB1'
-  - '&mkp MB3'
-  - '&mkp MB2'
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - '&mkp MB1'
-  - '&mkp MB3'
-  - '&mkp MB2'
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - '&mkp MB4'
-  - {t: ▽, type: trans}
-  - '&mkp MB5'
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - LCTRL
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  BT:
+  - {t: ), h: (}
+  - {t: '[', h: ']', s: '{'}
   - F1
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: BT, h: '0'}
-  - {t: BT, h: '1'}
-  - {t: BT, h: '2'}
-  - {t: BT, h: '3'}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - F2
+  - F3
+  - F10
+  - Ctl+Alt+$$mdi:arrow-down-bold-box-outline$$
+  - $$material:browse_activity$$
+  - $$mdi:skip-previous$$
+  - $$mdi:play-pause$$
+  - $$mdi:stop$$
+  - $$mdi:skip-next$$
+  - {t: ']', h: \, s: '}'}
+  - Alt+$$mdi:arrow-left-bold$$
+  - Alt+$$mdi:arrow-right-bold$$
+  - Ctl+R
+  - $$mdi:mouse-scroll-wheel$$
+  - {t: '$$mdi:undo$$', h: '$$mdi:apple-keyboard-shift$$'}
+  - {t: '$$mdi:redo$$', h: '$$mdi:apple-keyboard-control$$'}
   - {type: held}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  SCROLL:
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {t: '$$tabler:fold-down$$', type: trans}
+  - CONTEXT MENU
+  SYSTEM:
+  - '&ind_bat'
+  - {t: '$$tabler:fold-down$$', type: trans}
+  - {t: '$$tabler:fold-down$$', type: trans}
+  - '&ind_con'
+  - OUT USB
+  - OUT USB
+  - '&ind_con'
+  - {t: '$$tabler:fold-down$$', type: trans}
+  - {t: '$$tabler:fold-down$$', type: trans}
+  - '&ind_bat'
+  - {t: '$$tabler:fold-down$$', type: trans}
+  - {h: '4', s: '$$mdi:bluetooth-connect$$'}
+  - {h: '5', s: '$$mdi:bluetooth-connect$$'}
+  - {t: '$$tabler:fold-down$$', type: trans}
+  - {t: '$$tabler:fold-down$$', type: trans}
   - {type: held}
-  - {type: held}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {h: '1', s: '$$mdi:bluetooth-connect$$'}
+  - {h: '2', s: '$$mdi:bluetooth-connect$$'}
+  - {h: '3', s: '$$mdi:bluetooth-connect$$'}
+  - {h: '4', s: '$$mdi:bluetooth-connect$$'}
+  - {h: '5', s: '$$mdi:bluetooth-connect$$'}
+  - {t: '$$tabler:fold-down$$', type: trans}
+  - {h: '1', s: '$$mdi:bluetooth-connect$$'}
+  - {h: '2', s: '$$mdi:bluetooth-connect$$'}
+  - {h: '3', s: '$$mdi:bluetooth-connect$$'}
+  - OUT BLE
+  - $$mdi:bluetooth-off$$
+  - {t: '$$tabler:fold-down$$', type: trans}
+  - OUT BLE
+  - {t: '$$tabler:fold-down$$', type: trans}
+  - {t: '$$tabler:fold-down$$', type: trans}
+  - {t: '$$tabler:fold-down$$', type: trans}
+  - {t: '$$tabler:fold-down$$', type: trans}
+  - $$mdi:progress-download$$
+  - {t: '$$tabler:fold-down$$', type: trans}
+  - {t: '$$tabler:fold-down$$', type: trans}
+  - {t: '$$tabler:fold-down$$', type: trans}
+  - {t: '$$tabler:fold-down$$', type: trans}
+  - {t: '$$tabler:fold-down$$', type: trans}
+  - {t: '$$tabler:fold-down$$', type: trans}
+  - {t: '$$tabler:fold-down$$', type: trans}
+  - $$mdi:progress-download$$
 combos:
-- p: [2, 3]
-  k: '['
-- p: [6, 7]
-  k: ']'
-- p: [12, 13]
-  k: (
-- p: [18, 17]
-  k: )
-- p: [23, 24]
-  k: '{'
-- p: [29, 30]
-  k: '}'
-- p: [4, 5]
-  k: \
-- p: [14, 15]
-  k: '|'
 - p: [19, 20]
-  k: ENTER
+  k: {t: あいう, h: Alt+`}
+  l: [DEFAULT, MOUSE]
+- p: [20, 21]
+  k: {h: '>', s: '$$mdi:microsoft-windows$$'}
+  l: [DEFAULT, MOUSE]
+- p: [10, 11]
+  k: {h: <, s: '$$mdi:microsoft-windows$$'}
+  l: [DEFAULT, MOUSE]
+- p: [22, 33]
+  k: {t: '[]', h: '&zen_brackets'}
+  l: [DEFAULT, MOUSE]
+  draw_separate: true
+- p: [10, 21]
+  k: {t: (), h: '&zen_parenthesis'}
+  l: [DEFAULT, MOUSE]
+  draw_separate: true
+- p: [22, 23]
+  k: $$material:search$$
+  l: [DEFAULT, MOUSE]
+- p: [18, 19]
+  k: {t: Ctl+V, h: V}
+  l: [DEFAULT, MOUSE]
+- p: [12, 13]
+  k: '&DBLSFT'
+  l: [DEFAULT, MOUSE]
 - p: [11, 12]
-  k: SCROLL
+  k: ABC
+  l: [DEFAULT, MOUSE]
+- p: [0, 9]
+  k: {t: '{}', h: '&zen_braces'}
+  l: [DEFAULT, MOUSE]
+  draw_separate: true
+- p: [23, 24]
+  k: $$mdi:undo$$
+  l: [DEFAULT, MOUSE]
+- p: [31, 32]
+  k: $$mdi:redo$$
+  l: [DEFAULT, MOUSE]
+- p: [18, 19]
+  k: $$mdi:view-dashboard-outline$$
+  l: [NUMBER]
+- p: [8, 9]
+  k: $$mdi:window-close$$
+  l: [DEFAULT, MOUSE]
+- p: [7, 8]
+  k: $$mdi:window-maximize$$
+  l: [DEFAULT, MOUSE]
+- p: [6, 7]
+  k: $$mdi:window-minimize$$
+  l: [DEFAULT, MOUSE]
+- p: [0, 1]
+  k: Alt+$$mdi:arrow-left-bold$$
+  l: [DEFAULT, MOUSE]
+- p: [1, 2]
+  k: Alt+$$mdi:arrow-right-bold$$
+  l: [DEFAULT, MOUSE]
