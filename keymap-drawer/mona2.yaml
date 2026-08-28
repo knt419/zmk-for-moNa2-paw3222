@@ -302,27 +302,27 @@ layers:
   - {t: '$$tabler:fold-down$$', type: trans}
   - $$mdi:progress-download$$
 combos:
-- p: [19, 20]
+- p: [19, 18]
   k: {t: あいう, h: Alt+`}
   l: [DEFAULT, MOUSE]
-- p: [20, 21]
+- p: [20, 19]
   k: {h: '>', s: '$$mdi:microsoft-windows$$'}
   l: [DEFAULT, MOUSE]
 - p: [10, 11]
   k: {h: <, s: '$$mdi:microsoft-windows$$'}
   l: [DEFAULT, MOUSE]
-- p: [22, 33]
+- p: [21, 32]
   k: {t: '[]', h: '&zen_brackets'}
   l: [DEFAULT, MOUSE]
   draw_separate: true
-- p: [10, 21]
+- p: [10, 20]
   k: {t: (), h: '&zen_parenthesis'}
   l: [DEFAULT, MOUSE]
   draw_separate: true
 - p: [22, 23]
   k: $$material:search$$
   l: [DEFAULT, MOUSE]
-- p: [18, 19]
+- p: [18, 17]
   k: {t: Ctl+V, h: V}
   l: [DEFAULT, MOUSE]
 - p: [12, 13]
@@ -335,13 +335,13 @@ combos:
   k: {t: '{}', h: '&zen_braces'}
   l: [DEFAULT, MOUSE]
   draw_separate: true
-- p: [23, 24]
+- p: [23, 22]
   k: $$mdi:undo$$
   l: [DEFAULT, MOUSE]
-- p: [31, 32]
+- p: [31, 30]
   k: $$mdi:redo$$
   l: [DEFAULT, MOUSE]
-- p: [18, 19]
+- p: [18, 17]
   k: $$mdi:view-dashboard-outline$$
   l: [NUMBER]
 - p: [8, 9]
