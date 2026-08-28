@@ -62,7 +62,7 @@
         reg = <0>;
         spi-max-frequency = <2000000>;
         irq-gpios = <&gpio0 2 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>; //P0.02を指定(MOTION)
-        res-cpi = <950>;
+        res-cpi = <3000>;
     };
 };
 
@@ -73,13 +73,17 @@
     device = <&trackball_central>;
 
     // 通常のポインター移動 + オートマウスレイヤー（閾値付き）
-    input-processors = <&zip_threshold_temp_layer 3 500>;  //オートマウスレイヤー（100ピクセル移動後、レイヤー3に500ms切り替え）
+    input-processors = <&zip_threshold_temp_layer 1 700>;  //オートマウスレイヤー（100ピクセル移動後、レイヤー3に500ms切り替え）
 
     scroller {
-        layers = <5>;
+        layers = <2>;
         input-processors = <&zip_xy_to_scroll_mapper>,                         //スクロールモードに変更
                            <&zip_scroll_transform INPUT_TRANSFORM_Y_INVERT>,   //スクロールのY軸反転
-                           <&zip_scroll_scaler 1 10>;                          //スクロール量を1/10倍
+                           <&zip_scroll_scaler 1 5>;                          //スクロール量を1/5倍
     };
 
+    sniper {
+            layers = <3>;
+            input-processors = <&zip_xy_scaler 1 3>;
+    };
 };
