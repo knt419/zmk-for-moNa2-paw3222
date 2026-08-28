@@ -42,13 +42,13 @@
 
         IME_ON {
             bindings = <&imeonoff LA(GRAVE) LANGUAGE_1>;
-            key-positions = <19 20>;
+            key-positions = <19 18>;
             layers = <0 1>;
         };
 
         win_mv_right {
             bindings = <&winmvright>;
-            key-positions = <20 21>;
+            key-positions = <20 19>;
             slow-release;
             layers = <0 1>;
         };
@@ -62,13 +62,13 @@
 
         brackets {
             bindings = <&brack 0 0>;
-            key-positions = <22 33>;
+            key-positions = <21 32>;
             layers = <0 1>;
         };
 
         parenthesis {
             bindings = <&paren 0 0>;
-            key-positions = <10 21>;
+            key-positions = <10 20>;
             layers = <0 1>;
         };
 
@@ -80,7 +80,7 @@
 
         paste {
             bindings = <&holdtap LG(V) LC(V)>;
-            key-positions = <18 19>;
+            key-positions = <18 17>;
             layers = <0 1>;
         };
 
@@ -104,19 +104,19 @@
 
         undo {
             bindings = <&kp LC(Z)>;
-            key-positions = <23 24>;
+            key-positions = <23 22>;
             layers = <0 1>;
         };
 
         redo {
             bindings = <&kp LC(Y)>;
-            key-positions = <31 32>;
+            key-positions = <31 30>;
             layers = <0 1>;
         };
 
         taskview {
             bindings = <&kp LG(TAB)>;
-            key-positions = <18 19>;
+            key-positions = <18 17>;
             layers = <4>;
         };
 
@@ -494,7 +494,7 @@
         DEFAULT {
             bindings = <
 &kp Q                         &kp R                          &kp MINUS                        &kp G      &kp Z                                               &slash            &holdtap LC(C) C  &kp H  &kp L             &kp Y
-&kp U                         &kp N                          &kp I                            &kp T      &kp D                     &lt 6 ESC      &kp P             &kp O             &kp K  &holdtap LC(A) A  &kp S
+&kp U                         &kp N                          &kp I                            &kp T      &kp D                                &lt 6 ESC      &kp P             &kp O             &kp K  &holdtap LC(A) A  &kp S
 &holdtap LEFT_SHIFT V         &holdtap EXCLAMATION COMMA     &holdtap QUESTION PERIOD         &kp M      &kp W             &kp CAPSLOCK       &kp SEMICOLON  &holdtap LC(X) X  &holdtap LG(E) E  &kp B  &kp F             &kp J
 &holdtap LC(SPACE) LS(LC(M))  &holdtap LEFT_GUI LC(PAGE_UP)  &holdtap LEFT_ALT LC(PAGE_DOWN)  &mkp LCLK  &mt LSHIFT SPACE  &mt LCTRL TAB      &lt_bsdel 5 0  &lt 4 ENTER                                                  &kp PRINTSCREEN
             >;
@@ -505,7 +505,7 @@
         MOUSE {
             bindings = <
 &trans  &trans  &trans  &trans  &trans                                            &trans  &trans     &trans             &trans     &trans
-&trans  &trans  &trans  &trans  &trans                             &trans  &trans  &trans     &trans             &trans     &trans
+&trans  &trans  &trans  &trans  &trans                                    &trans  &trans  &trans     &trans             &trans     &trans
 &trans  &trans  &trans  &trans  &trans             &trans                 &trans  &trans  &mkp LCLK  &mkp_layer 2 MCLK  &mkp RCLK  &trans
 &trans  &trans  &trans  &trans  &mkp_layer 2 MCLK  &mkp_layer 3 RCLK      &trans  &trans                                           &trans
             >;
@@ -514,7 +514,7 @@
         SCROLL {
             bindings = <
 &trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans       &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans              &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &trans
             >;
@@ -523,7 +523,7 @@
         SNIPE {
             bindings = <
 &trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans        &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans              &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &trans
             >;
@@ -532,7 +532,7 @@
         NUMBER {
             bindings = <
 &holdtap JP_ASTERISK ASTERISK  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &holdtap JP_PLUS PLUS                                        &holdtap JP_TILDE TILDE  &uj_backquote 0 0  &uj_quote 0 0  &uj_doublequote 0 0  &uj_caret 0 0
-&kp SLASH                      &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp MINUS                     &trans        &kp LEFT                 &kp DOWN           &kp UP_ARROW   &kp RIGHT            &kp BACKSLASH
+&kp SLASH                      &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp MINUS                                      &trans        &kp LEFT                 &kp DOWN           &kp UP_ARROW   &kp RIGHT            &kp BACKSLASH
 &kp N0                         &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &holdtap JP_COLON COLON  &kp KP_NUMLOCK        &uj_pipe 0 0  &kp EXCLAMATION          &uj_at 0 0         &hash          &uj_amp 0 0          &dollar
 &kp PERCENT                    &kp PERIOD    &kp COMMA     &mkp RCLK     &mt LEFT_SHIFT EQUAL     &mt LCTRL PERIOD      &trans        &trans                                                                          &holdtap JP_UNDERSCORE UNDER
             >;
@@ -543,7 +543,7 @@
         FUNCTION {
             bindings = <
 &holdtap JP_LEFT_BRACE LEFT_BRACE              &kp F7         &kp F8     &kp F9     &kp F12                                                           &kp INSERT  &kp DELETE        &kp PRINTSCREEN  &kp PAUSE_BREAK  &holdtap JP_RIGHT_BRACE RIGHT_BRACE
-&holdtap JP_LEFT_PARENTHESIS LEFT_PARENTHESIS  &kp F4         &kp F5     &kp F6     &kp F11                      &trans              &kp HOME    &kp PAGE_DOWN     &kp PAGE_UP      &kp END          &holdtap JP_RIGHT_PARENTHESIS RIGHT_PARENTHESIS
+&holdtap JP_LEFT_PARENTHESIS LEFT_PARENTHESIS  &kp F4         &kp F5     &kp F6     &kp F11                                       &trans              &kp HOME    &kp PAGE_DOWN     &kp PAGE_UP      &kp END          &holdtap JP_RIGHT_PARENTHESIS RIGHT_PARENTHESIS
 &holdtap JP_LEFT_BRACKET LEFT_BRACKET          &kp F1         &kp F2     &kp F3     &kp F10           &kp LC(LA(SCROLLLOCK))      &kp LC(LS(ESCAPE))  &kp C_PREV  &kp C_PLAY_PAUSE  &kp C_STOP       &kp C_NEXT       &holdtap JP_RIGHT_BRACKET RIGHT_BRACKET
 &kp LA(LEFT_ARROW)                             &kp LA(RIGHT)  &kp LC(R)  &mkp MCLK  &mt LSHIFT LC(Z)  &mt LCTRL LC(Y)             &trans              &trans                                                          &kp K_CONTEXT_MENU
             >;
@@ -554,8 +554,8 @@
         SYSTEM {
             bindings = <
 &ind_bat     &trans        &trans        &ind_con      &out OUT_USB                          &out OUT_USB  &ind_con      &trans        &trans        &ind_bat
-&trans       &bt BT_SEL 3  &bt BT_SEL 4  &trans        &trans             &trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
-&trans       &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &out OUT_BLE  &bt BT_CLR           &trans  &out OUT_BLE  &trans        &trans        &trans        &trans
+&trans       &bt BT_SEL 3  &bt BT_SEL 4  &trans        &trans                        &trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
+&trans       &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &out OUT_BLE  &bt BT_CLR      &trans  &out OUT_BLE  &trans        &trans        &trans        &trans
 &bootloader  &trans        &trans        &trans        &trans        &trans          &trans  &trans                                                  &bootloader
             >;
         };
