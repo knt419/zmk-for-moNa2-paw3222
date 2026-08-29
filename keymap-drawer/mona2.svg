@@ -561,8 +561,8 @@ rect.held, rect.combo.held {
 <use href="#mdi:microsoft-windows" xlink:href="#mdi:microsoft-windows" x="49" y="97" height="15" width="15.0" class="combo shifted glyph mdi:microsoft-windows"/>
 </g>
 <g class="combo combopos-3">
-<rect rx="6" ry="6" x="98" y="134" width="28" height="26" class="combo"/>
-<use href="#material:search" xlink:href="#material:search" x="103" y="138" height="18" width="18.0" class="combo tap glyph material:search"/>
+<rect rx="6" ry="6" x="42" y="151" width="28" height="26" class="combo"/>
+<use href="#material:search" xlink:href="#material:search" x="47" y="155" height="18" width="18.0" class="combo tap glyph material:search"/>
 </g>
 <g class="combo combopos-4">
 <rect rx="6" ry="6" x="574" y="75" width="28" height="26" class="combo"/>
@@ -800,8 +800,8 @@ rect.held, rect.combo.held {
 <use href="#mdi:microsoft-windows" xlink:href="#mdi:microsoft-windows" x="49" y="97" height="15" width="15.0" class="combo shifted glyph mdi:microsoft-windows"/>
 </g>
 <g class="combo combopos-3">
-<rect rx="6" ry="6" x="98" y="134" width="28" height="26" class="combo"/>
-<use href="#material:search" xlink:href="#material:search" x="103" y="138" height="18" width="18.0" class="combo tap glyph material:search"/>
+<rect rx="6" ry="6" x="42" y="151" width="28" height="26" class="combo"/>
+<use href="#material:search" xlink:href="#material:search" x="47" y="155" height="18" width="18.0" class="combo tap glyph material:search"/>
 </g>
 <g class="combo combopos-4">
 <rect rx="6" ry="6" x="574" y="75" width="28" height="26" class="combo"/>

@@ -319,7 +319,7 @@ combos:
   k: {t: (), h: '&zen_parenthesis'}
   l: [DEFAULT, MOUSE]
   draw_separate: true
-- p: [22, 23]
+- p: [22, 21]
   k: $$material:search$$
   l: [DEFAULT, MOUSE]
 - p: [18, 17]
