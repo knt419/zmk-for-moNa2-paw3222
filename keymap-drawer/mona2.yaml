@@ -183,7 +183,7 @@ layers:
   - {t: '''', h: '&jp_quote'}
   - {t: '"', h: '&jp_doublequote'}
   - {t: ^, h: '&jp_caret'}
-  - {t: /, s: '?'}
+  - {t: /, h: '%', s: '?'}
   - '4'
   - '5'
   - '6'
@@ -207,8 +207,8 @@ layers:
   - {t: '&', h: '&jp_amp'}
   - $
   - '%'
-  - {t: ., s: '>'}
   - {t: ',', s: <}
+  - {t: ., s: '>'}
   - $$mdi:mouse-right-click-outline$$
   - {t: '=', h: '$$mdi:apple-keyboard-shift$$', s: +}
   - {t: ., h: '$$mdi:apple-keyboard-control$$', s: '>'}
