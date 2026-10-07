@@ -1,16 +1,29 @@
 #include "mona2.dtsi"
 #include <input/processors.dtsi>
+#include <dt-bindings/zmk/input_transform.h>
 #include <zephyr/dt-bindings/input/input-event-codes.h>
 
 / {
-    // カスタム入力プロセッサー: 閾値付き一時レイヤー
-    zip_threshold_temp_layer: input_processor_threshold_temp_layer {
-        compatible = "zmk,input-processor-threshold-temp-layer";
-        #input-processor-cells = <2>;
-        activation-threshold = <100>;  // トラックボールを100ピクセル移動後にレイヤー3に切り替え
-        require-prior-idle-ms = <0>;
-        excluded-positions = <>;
+    trackball_listener {
+        compatible = "zmk,input-listener";
+        device = <&trackball>;
+
+        input-processors = <&zip_temp_layer 1 700>;
+
+        scroller {
+            layers = <2>;
+            input-processors = <&zip_xy_to_scroll_mapper>, <&zip_scroll_scaler 1 5>, <&zip_scroll_transform INPUT_TRANSFORM_X_INVERT>;
+        };
+
+        sniper {
+            layers = <3>;
+            input-processors = <&zip_xy_scaler 1 3>;
+        };
     };
+};
+
+&zip_temp_layer {
+    require-prior-idle-ms = <1000>;
 };
 
 &default_transform {
@@ -58,11 +71,15 @@
 
     trackball_central: trackball_central@0 {
         status = "okay";
-        compatible = "pixart,paw3222";  //トラボセンサ用のドライバとバインド
+        compatible = "pixart,paw32XX";  //トラボセンサ用のドライバとバインド
         reg = <0>;
         spi-max-frequency = <2000000>;
         irq-gpios = <&gpio0 2 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>; //P0.02を指定(MOTION)
         res-cpi = <2300>;
+        invert-x;
+        invert-y;
+        zephyr,axis-x = <INPUT_REL_X>;
+        zephyr,axis-y = <INPUT_REL_Y>;
     };
 };
 
@@ -73,7 +90,7 @@
     device = <&trackball_central>;
 
     // 通常のポインター移動 + オートマウスレイヤー（閾値付き）
-    input-processors = <&zip_threshold_temp_layer 1 700>;  //オートマウスレイヤー（100ピクセル移動後、レイヤー3に500ms切り替え）
+    input-processors = <&zip_temp_layer 1 700>;  //オートマウスレイヤー（100ピクセル移動後、レイヤー3に500ms切り替え）
 
     scroller {
         layers = <2>;
