@@ -19,7 +19,7 @@ This version uses the **PAW3222** optical sensor for trackball input.
 ## ZMK / Zephyr version
 
 This config is built against **ZMK `main`** (Zephyr 4.1, HWMv2). The build target is the
-ZMK board variant `xiao_ble//zmk`, and the shield requires the `seeed_xiao` interconnect.
+ZMK board variant `xiao_ble//zmk`, and the shield requires the `xiao_ble` board.
 
 Zephyr 4.1 migration notes:
 
@@ -27,18 +27,26 @@ Zephyr 4.1 migration notes:
   `build-user-config.yml@v0.3.0` to `@main`.
 - `CONFIG_NFCT_PINS_AS_GPIOS` was removed from Kconfig. The nRF52840 NFC pins
   (P0.09/P0.10), which moNa2 uses as GPIOs, are switched in the devicetree instead
-  (`boards/shields/mona2/boards/xiao_ble_zmk.overlay`).
-- Status advertisement is configured on the central half only (`config/mona2_r.conf`).
-  ZMK compiles the keymap/layer/event code for the central side of a split only, so the
-  prospector module cannot link in a peripheral build.
+  (`&uicr { nfct-pins-as-gpios; };` in `boards/shields/mona2/mona2.dtsi`).
+- The trackball uses the stock `zmk,input-listener` + `zip_*` input processors with
+  Zephyr's upstream `pixart,paw32xx` driver, so no external module is required.
 
-### Known external issue
+Configuration layout:
 
-`zmk-input-processor-threshold-temp-layer` (pinned to `main`) still calls
-`zmk_keymap_layer_activate()` / `zmk_keymap_layer_deactivate()` with the pre-`main`
-signature, so it does not compile against ZMK `main`. The required one-line-per-call fix
-is in [`patches/`](patches) — apply it on a fork (or vendor the module) and point
-`config/west.yml` there until upstream catches up.
+- `config/mona2.conf` — shared by both halves (name, ZMK Studio, battery, LED thresholds,
+  BLE tuning).
+- `config/mona2_l.conf` — encoder only.
+- `config/mona2_r.conf` — trackball (split central), LED layer colors, stack sizes.
+
+The behaviour settings mirror
+[knt419/zmk-config-microball](https://github.com/knt419/zmk-config-microball) so both
+keyboards behave the same: larger BLE buffers/stack sizes, `BT_PERIPHERAL_PREF_LATENCY=0`,
+max TX power, 2M PHY, 120-byte data length, `INPUT_THREAD_STACK_SIZE=2048`,
+`ZMK_SPLIT_BLE_CENTRAL_SPLIT_RUN_STACK_SIZE=4096`, a 1 MHz SPI clock, and the same
+scroll / sniper / auto-mouse processor chain.
+
+Values that are tied to the hardware intentionally differ from microball: `res-cpi`
+(25 mm ball) and the encoder `steps` / `triggers-per-rotation`.
 
 ### Local build note
 
