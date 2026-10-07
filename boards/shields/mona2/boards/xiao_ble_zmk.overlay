@@ -1,0 +1,14 @@
+/*
+ * Board specific configuration for the Seeed Studio XIAO nRF52840 (ZMK variant),
+ * i.e. build target `xiao_ble//zmk`.
+ *
+ * moNa2 uses P0.09 and P0.10 (the nRF52840 NFC pins) as regular GPIOs, so the
+ * UICR NFC pin function must be disabled. This replaces the old
+ * `CONFIG_NFCT_PINS_AS_GPIOS=y` Kconfig symbol, which was removed in Zephyr 4.1.
+ *
+ * SPDX-License-Identifier: MIT
+ */
+
+&uicr {
+    nfct-pins-as-gpios;
+};
