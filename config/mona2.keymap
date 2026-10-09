@@ -85,7 +85,7 @@
         };
 
         dblsft {
-            bindings = <&DBLSFT>;
+            bindings = <&kp LG(SPACE)>;
             key-positions = <12 13>;
             layers = <0 1>;
         };
