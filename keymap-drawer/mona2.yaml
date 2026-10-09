@@ -326,7 +326,7 @@ combos:
   k: {t: Ctl+V, h: V}
   l: [DEFAULT, MOUSE]
 - p: [12, 13]
-  k: '&DBLSFT'
+  k: Gui+$$mdi:keyboard-space$$
   l: [DEFAULT, MOUSE]
 - p: [11, 12]
   k: ABC

@@ -571,7 +571,7 @@ rect.held, rect.combo.held {
 </g>
 <g class="combo combopos-5">
 <rect rx="6" ry="6" x="154" y="75" width="28" height="26" class="combo"/>
-<text x="168" y="88" class="combo tap"><tspan style="font-size: 86%">&amp;DBLSFT</tspan></text>
+<use href="#mdi:keyboard-space" xlink:href="#mdi:keyboard-space" x="159" y="79" height="18" width="18.0" class="combo tap glyph mdi:keyboard-space"/>
 </g>
 <g class="combo combopos-6">
 <rect rx="6" ry="6" x="98" y="78" width="28" height="26" class="combo"/>
@@ -810,7 +810,7 @@ rect.held, rect.combo.held {
 </g>
 <g class="combo combopos-5">
 <rect rx="6" ry="6" x="154" y="75" width="28" height="26" class="combo"/>
-<text x="168" y="88" class="combo tap"><tspan style="font-size: 86%">&amp;DBLSFT</tspan></text>
+<use href="#mdi:keyboard-space" xlink:href="#mdi:keyboard-space" x="159" y="79" height="18" width="18.0" class="combo tap glyph mdi:keyboard-space"/>
 </g>
 <g class="combo combopos-6">
 <rect rx="6" ry="6" x="98" y="78" width="28" height="26" class="combo"/>
