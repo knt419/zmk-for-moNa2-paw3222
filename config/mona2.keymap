@@ -493,8 +493,8 @@
 
         DEFAULT {
             bindings = <
-&kp Q                         &kp R                          &kp MINUS                        &kp G      &kp Z                                               &slash            &holdtap LC(C) C  &kp H  &kp L             &kp Y
-&kp U                         &kp N                          &kp I                            &kp T      &kp D                                &lt 6 ESC      &kp P             &kp O             &kp K  &holdtap LC(A) A  &kp S
+&kp Q                         &kp R                          &kp MINUS                        &kp D      &kp Z                                               &slash            &holdtap LC(C) C  &kp H  &kp L             &kp Y
+&kp U                         &kp N                          &kp I                            &kp T      &kp G                                &lt 6 ESC      &kp P             &kp O             &kp K  &holdtap LC(A) A  &kp S
 &holdtap LEFT_SHIFT V         &holdtap EXCLAMATION COMMA     &holdtap QUESTION PERIOD         &kp M      &kp W             &kp CAPSLOCK       &kp SEMICOLON  &holdtap LC(X) X  &holdtap LG(E) E  &kp B  &kp F             &kp J
 &holdtap LC(SPACE) LS(LC(M))  &holdtap LEFT_GUI LC(PAGE_UP)  &holdtap LEFT_ALT LC(PAGE_DOWN)  &mkp LCLK  &mt LSHIFT SPACE  &mt LCTRL TAB      &lt_bsdel 5 0  &lt 4 ENTER                                                  &kp PRINTSCREEN
             >;
