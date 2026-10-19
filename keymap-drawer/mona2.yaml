@@ -4,7 +4,7 @@ layers:
   - Q
   - R
   - {t: '-', s: _}
-  - G
+  - D
   - Z
   - {t: /, s: \}
   - {t: C, h: Ctl+C}
@@ -15,7 +15,7 @@ layers:
   - N
   - I
   - T
-  - D
+  - G
   - {t: '$$mdi:keyboard-esc$$', h: SYSTEM}
   - P
   - O
