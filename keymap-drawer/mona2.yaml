@@ -34,9 +34,9 @@ layers:
   - B
   - F
   - J
-  - {t: '$$mdi:microphone-off$$', h: 'Ctl+$$mdi:keyboard-space$$'}
-  - {t: Ctl+PgUp, h: '$$mdi:microsoft-windows$$'}
-  - {t: Ctl+PgDn, h: '$$mdi:apple-keyboard-option$$'}
+  - {t: '$$mdi:microphone-off$$', h: (LC(SPACE))}
+  - {t: Ctl+PgUp, h: (LEFT GUI)}
+  - {t: Ctl+PgDn, h: (LEFT ALT)}
   - $$mdi:mouse-left-click-outline$$
   - {t: '$$mdi:keyboard-space$$', h: '$$mdi:apple-keyboard-shift$$'}
   - {t: '$$mdi:keyboard-tab$$', h: '$$mdi:apple-keyboard-control$$'}
@@ -253,8 +253,8 @@ layers:
   - Alt+$$mdi:arrow-right-bold$$
   - Ctl+R
   - $$mdi:mouse-scroll-wheel$$
-  - {t: '$$mdi:undo$$', h: '$$mdi:apple-keyboard-shift$$'}
-  - {t: '$$mdi:redo$$', h: '$$mdi:apple-keyboard-control$$'}
+  - {t: '$$mdi:undo$$', h: (LSHIFT)}
+  - {t: '$$mdi:redo$$', h: (LCTRL)}
   - {type: held}
   - {t: '$$tabler:fold-down$$', type: trans}
   - CONTEXT MENU
@@ -326,7 +326,7 @@ combos:
   k: {t: Ctl+V, h: V}
   l: [DEFAULT, MOUSE]
 - p: [12, 13]
-  k: Gui+$$mdi:keyboard-space$$
+  k: {t: 'Gui+$$mdi:keyboard-space$$', h: (LEFT GUI)}
   l: [DEFAULT, MOUSE]
 - p: [11, 12]
   k: ABC

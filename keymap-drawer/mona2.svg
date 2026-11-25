@@ -12,9 +12,6 @@
 <svg id="mdi:apple-keyboard-control">
 <svg xmlns="http://www.w3.org/2000/svg" id="mdi-apple-keyboard-control" viewBox="0 0 24 24"><path d="M19.78,11.78L18.36,13.19L12,6.83L5.64,13.19L4.22,11.78L12,4L19.78,11.78Z" /></svg>
 </svg>
-<svg id="mdi:apple-keyboard-option">
-<svg xmlns="http://www.w3.org/2000/svg" id="mdi-apple-keyboard-option" viewBox="0 0 24 24"><path d="M3,4H9.11L16.15,18H21V20H14.88L7.84,6H3V4M14,4H21V6H14V4Z" /></svg>
-</svg>
 <svg id="mdi:apple-keyboard-shift">
 <svg xmlns="http://www.w3.org/2000/svg" id="mdi-apple-keyboard-shift" viewBox="0 0 24 24"><path d="M15,18V12H17.17L12,6.83L6.83,12H9V18H15M12,4L22,14H17V20H7V14H2L12,4Z" /></svg>
 </svg>
@@ -498,21 +495,21 @@ rect.held, rect.combo.held {
 <g transform="translate(28, 231)" class="key keypos-33">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <use href="#mdi:microphone-off" xlink:href="#mdi:microphone-off" x="-9" y="-9" height="18" width="18.0" class="key tap glyph mdi:microphone-off"/>
-<use href="#mdi:keyboard-space" xlink:href="#mdi:keyboard-space" x="-8" y="9" height="15" width="15.0" class="key hold glyph mdi:keyboard-space"/>
+<text x="0" y="24" class="key hold"><tspan style="font-size: 60%">(LC(SPACE…</tspan></text>
 </g>
 <g transform="translate(84, 210)" class="key keypos-34">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">
 <tspan x="0" dy="-0.9em">Ctl+</tspan><tspan x="0" dy="1.2em">PgUp</tspan>
 </text>
-<use href="#mdi:microsoft-windows" xlink:href="#mdi:microsoft-windows" x="-8" y="9" height="15" width="15.0" class="key hold glyph mdi:microsoft-windows"/>
+<text x="0" y="24" class="key hold"><tspan style="font-size: 60%">(LEFT GUI)</tspan></text>
 </g>
 <g transform="translate(140, 196)" class="key keypos-35">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">
 <tspan x="0" dy="-0.9em">Ctl+</tspan><tspan x="0" dy="1.2em">PgDn</tspan>
 </text>
-<use href="#mdi:apple-keyboard-option" xlink:href="#mdi:apple-keyboard-option" x="-8" y="9" height="15" width="15.0" class="key hold glyph mdi:apple-keyboard-option"/>
+<text x="0" y="24" class="key hold"><tspan style="font-size: 60%">(LEFT ALT)</tspan></text>
 </g>
 <g transform="translate(208, 225)" class="key keypos-36">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -572,6 +569,7 @@ rect.held, rect.combo.held {
 <g class="combo combopos-5">
 <rect rx="6" ry="6" x="154" y="75" width="28" height="26" class="combo"/>
 <use href="#mdi:keyboard-space" xlink:href="#mdi:keyboard-space" x="159" y="79" height="18" width="18.0" class="combo tap glyph mdi:keyboard-space"/>
+<text x="168" y="99" class="combo hold"><tspan style="font-size: 60%">(LEFT GUI)</tspan></text>
 </g>
 <g class="combo combopos-6">
 <rect rx="6" ry="6" x="98" y="78" width="28" height="26" class="combo"/>
@@ -811,6 +809,7 @@ rect.held, rect.combo.held {
 <g class="combo combopos-5">
 <rect rx="6" ry="6" x="154" y="75" width="28" height="26" class="combo"/>
 <use href="#mdi:keyboard-space" xlink:href="#mdi:keyboard-space" x="159" y="79" height="18" width="18.0" class="combo tap glyph mdi:keyboard-space"/>
+<text x="168" y="99" class="combo hold"><tspan style="font-size: 60%">(LEFT GUI)</tspan></text>
 </g>
 <g class="combo combopos-6">
 <rect rx="6" ry="6" x="98" y="78" width="28" height="26" class="combo"/>
@@ -1552,12 +1551,12 @@ rect.held, rect.combo.held {
 <g transform="translate(271, 231) rotate(9.0)" class="key keypos-37">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <use href="#mdi:undo" xlink:href="#mdi:undo" x="-9" y="-9" height="18" width="18.0" class="key tap glyph mdi:undo"/>
-<use href="#mdi:apple-keyboard-shift" xlink:href="#mdi:apple-keyboard-shift" x="-8" y="9" height="15" width="15.0" class="key hold glyph mdi:apple-keyboard-shift"/>
+<text x="0" y="24" class="key hold"><tspan style="font-size: 75%">(LSHIFT)</tspan></text>
 </g>
 <g transform="translate(333, 247) rotate(20.0)" class="key keypos-38">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <use href="#mdi:redo" xlink:href="#mdi:redo" x="-9" y="-9" height="18" width="18.0" class="key tap glyph mdi:redo"/>
-<use href="#mdi:apple-keyboard-control" xlink:href="#mdi:apple-keyboard-control" x="-8" y="9" height="15" width="15.0" class="key hold glyph mdi:apple-keyboard-control"/>
+<text x="0" y="24" class="key hold"><tspan style="font-size: 86%">(LCTRL)</tspan></text>
 </g>
 <g transform="translate(423, 247) rotate(-20.0)" class="key held keypos-39">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key held"/>
