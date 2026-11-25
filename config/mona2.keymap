@@ -85,7 +85,7 @@
         };
 
         dblsft {
-            bindings = <&kp LG(SPACE)>;
+            bindings = <&holdtap (LEFT_GUI) LG(SPACE)>;
             key-positions = <12 13>;
             layers = <0 1>;
         };
@@ -493,10 +493,10 @@
 
         DEFAULT {
             bindings = <
-&kp Q                         &kp R                          &kp MINUS                        &kp D      &kp Z                                               &slash            &holdtap LC(C) C  &kp H  &kp L             &kp Y
-&kp U                         &kp N                          &kp I                            &kp T      &kp G                                &lt 6 ESC      &kp P             &kp O             &kp K  &holdtap LC(A) A  &kp S
-&holdtap LEFT_SHIFT V         &holdtap EXCLAMATION COMMA     &holdtap QUESTION PERIOD         &kp M      &kp W             &kp CAPSLOCK       &kp SEMICOLON  &holdtap LC(X) X  &holdtap LG(E) E  &kp B  &kp F             &kp J
-&holdtap LC(SPACE) LS(LC(M))  &holdtap LEFT_GUI LC(PAGE_UP)  &holdtap LEFT_ALT LC(PAGE_DOWN)  &mkp LCLK  &mt LSHIFT SPACE  &mt LCTRL TAB      &lt_bsdel 5 0  &lt 4 ENTER                                                  &kp PRINTSCREEN
+&kp Q                           &kp R                            &kp MINUS                          &kp D      &kp Z                                               &slash            &holdtap LC(C) C  &kp H  &kp L             &kp Y
+&kp U                           &kp N                            &kp I                              &kp T      &kp G                                &lt 6 ESC      &kp P             &kp O             &kp K  &holdtap LC(A) A  &kp S
+&holdtap LEFT_SHIFT V           &holdtap EXCLAMATION COMMA       &holdtap QUESTION PERIOD           &kp M      &kp W             &kp CAPSLOCK       &kp SEMICOLON  &holdtap LC(X) X  &holdtap LG(E) E  &kp B  &kp F             &kp J
+&holdtap (LC(SPACE)) LS(LC(M))  &holdtap (LEFT_GUI) LC(PAGE_UP)  &holdtap (LEFT_ALT) LC(PAGE_DOWN)  &mkp LCLK  &mt LSHIFT SPACE  &mt LCTRL TAB      &lt_bsdel 5 0  &lt 4 ENTER                                                  &kp PRINTSCREEN
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_DOWN C_VOLUME_UP>;
@@ -542,10 +542,10 @@
 
         FUNCTION {
             bindings = <
-&holdtap JP_LEFT_BRACE LEFT_BRACE              &kp F7         &kp F8     &kp F9     &kp F12                                                           &kp INSERT  &kp DELETE        &kp PRINTSCREEN  &kp PAUSE_BREAK  &holdtap JP_RIGHT_BRACE RIGHT_BRACE
-&holdtap JP_LEFT_PARENTHESIS LEFT_PARENTHESIS  &kp F4         &kp F5     &kp F6     &kp F11                                       &trans              &kp HOME    &kp PAGE_DOWN     &kp PAGE_UP      &kp END          &holdtap JP_RIGHT_PARENTHESIS RIGHT_PARENTHESIS
-&holdtap JP_LEFT_BRACKET LEFT_BRACKET          &kp F1         &kp F2     &kp F3     &kp F10           &kp LC(LA(SCROLLLOCK))      &kp LC(LS(ESCAPE))  &kp C_PREV  &kp C_PLAY_PAUSE  &kp C_STOP       &kp C_NEXT       &holdtap JP_RIGHT_BRACKET RIGHT_BRACKET
-&kp LA(LEFT_ARROW)                             &kp LA(RIGHT)  &kp LC(R)  &mkp MCLK  &mt LSHIFT LC(Z)  &mt LCTRL LC(Y)             &trans              &trans                                                          &kp K_CONTEXT_MENU
+&holdtap JP_LEFT_BRACE LEFT_BRACE              &kp F7         &kp F8     &kp F9     &kp F12                                                             &kp INSERT  &kp DELETE        &kp PRINTSCREEN  &kp PAUSE_BREAK  &holdtap JP_RIGHT_BRACE RIGHT_BRACE
+&holdtap JP_LEFT_PARENTHESIS LEFT_PARENTHESIS  &kp F4         &kp F5     &kp F6     &kp F11                                         &trans              &kp HOME    &kp PAGE_DOWN     &kp PAGE_UP      &kp END          &holdtap JP_RIGHT_PARENTHESIS RIGHT_PARENTHESIS
+&holdtap JP_LEFT_BRACKET LEFT_BRACKET          &kp F1         &kp F2     &kp F3     &kp F10             &kp LC(LA(SCROLLLOCK))      &kp LC(LS(ESCAPE))  &kp C_PREV  &kp C_PLAY_PAUSE  &kp C_STOP       &kp C_NEXT       &holdtap JP_RIGHT_BRACKET RIGHT_BRACKET
+&kp LA(LEFT_ARROW)                             &kp LA(RIGHT)  &kp LC(R)  &mkp MCLK  &mt (LSHIFT) LC(Z)  &mt (LCTRL) LC(Y)           &trans              &trans                                                          &kp K_CONTEXT_MENU
             >;
 
             sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
